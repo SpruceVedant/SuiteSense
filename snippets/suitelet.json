@@ -1,0 +1,21 @@
+{
+    "NetSuite User Event Script - 2.x": {
+      "prefix": "nues2",
+      "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType UserEventScript",
+        " */",
+        "define(['N/log'], function (log) {",
+        "   function beforeSubmit(context) {",
+        "       log.debug('User Event Before Submit!');",
+        "   }",
+        "   return {",
+        "       beforeSubmit: beforeSubmit",
+        "   };",
+        "});"
+      ],
+      "description": "NetSuite User Event Script - 2.x"
+    }
+  }
+  

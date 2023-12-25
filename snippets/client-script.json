@@ -1,0 +1,21 @@
+{
+    "NetSuite Client Script - 2.x": {
+      "prefix": "ncs2",
+      "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType ClientScript",
+        " */",
+        "define(['N/log'], function (log) {",
+        "   function pageInit(context) {",
+        "       log.debug('Client Script PageInit!');",
+        "   }",
+        "   return {",
+        "       pageInit: pageInit",
+        "   };",
+        "});"
+      ],
+      "description": "NetSuite Client Script - 2.x"
+    }
+  }
+    

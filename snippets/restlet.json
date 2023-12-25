@@ -1,0 +1,21 @@
+{
+    "NetSuite Restlet - 2.x": {
+      "prefix": "nrest2",
+      "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType Restlet",
+        " */",
+        "define(['N/log'], function (log) {",
+        "   function onRequest(context) {",
+        "       log.debug('Restlet Executed!');",
+        "   }",
+        "   return {",
+        "       onRequest: onRequest",
+        "   };",
+        "});"
+      ],
+      "description": "NetSuite Restlet - 2.x"
+    }
+  }
+  
