@@ -1,4 +1,4 @@
-# suitesense README
+# Suitesense README
 
 This is the README for your extension "suitesense". After writing up a brief description, we recommend including the following sections.
 
