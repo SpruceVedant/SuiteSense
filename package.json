@@ -1,13 +1,16 @@
 {
   "name": "suitesense",
   "displayName": "SuiteSense",
-  "description": "Suitescript at your tips",
+  "description": "Suitescript snippets",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Snippets",
+    "Education",
+    "Debuggers"
   ],
   "activationEvents": [],
   "main": "./extension.js",
