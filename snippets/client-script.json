@@ -1,6 +1,6 @@
 {
     "NetSuite Client Script - 2.x": {
-      "prefix": "ncs2",
+      "prefix": "ncs",
       "body": [
         "/**",
         " * @NApiVersion 2.x",
@@ -16,6 +16,117 @@
         "});"
       ],
       "description": "NetSuite Client Script - 2.x"
-    }
+    },
+
+        "NetSuite Client Script - 2.x - Disply_Name_On_Memo": {
+      "prefix": "ncs_name_on_memo",
+      "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType ClientScript",
+        " */",
+        "define(['N/currentRecord'], function(error) {",
+        "    function pageInit(context) {",
+        "        // TODO: Implement pageInit logic",
+        "    }",
+        "",
+        "    function fieldChanged(context) {",
+        "        var currentRecord = context.currentRecord;",
+        "        var fieldId = context.fieldId;",
+        "",
+        "        if (fieldId === 'entity') {",
+        "            var newCustomerName = currentRecord.getText({",
+        "                fieldId: 'entity'",
+        "            });",
+        "",
+        "            currentRecord.setValue({",
+        "                fieldId: 'memo',",
+        "                value: 'Selected Customer: ' + newCustomerName",
+        "            });",
+        "        }",
+        "    }",
+        "",
+        "    return {",
+        "        pageInit: pageInit,",
+        "        fieldChanged: fieldChanged",
+        "    };",
+        "});"
+      ],
+      "description": "NetSuite Client Script - 2.x - Display Name On memo"
+    },
+
+    "NetSuite Client Script - 2.x - Running Sum Script": {
+      "prefix": "ncs_running_sum",
+      "body": [
+          "/**",
+          " * @NApiVersion 2.x",
+          " * @NScriptType ClientScript",
+          " */",
+          "define(['N/record', 'N/log', 'N/currentRecord'],",
+          "    function(record, log, currentRecord) {",
+          "",
+          "        function pageInit(context) {",
+          "            // TODO: Implement pageInit logic",
+          "        }",
+          "",
+          "        function lineInit(context) {",
+          "            if (context.sublistId === 'item') {",
+          "                var currentRecordObj = currentRecord.get();",
+          "                var lineCount = currentRecordObj.getLineCount({",
+          "                    sublistId: 'item'",
+          "                });",
+          "",
+          "                var runningTotal = 0;",
+          "",
+          "                for (var i = 0; i < lineCount; i++) {",
+          "                    var amount = currentRecordObj.getSublistValue({",
+          "                        sublistId: 'item',",
+          "                        fieldId: 'amount',",
+          "                        line: i",
+          "                    });",
+          "                    runningTotal += amount;",
+          "                }",
+          "",
+          "                currentRecordObj.setValue({",
+          "                    fieldId: 'custbody_bfl_sum',",
+          "                    value: runningTotal",
+          "                });",
+          "            }",
+          "        }",
+          "",
+          "        return {",
+          "            pageInit: pageInit,",
+          "            lineInit: lineInit",
+          "        };",
+          "    }",
+          ");"
+      ],
+      "description": "NetSuite Client Script - 2.x - Running Sum Script"
+  },
+  "NetSuite Client Script - 2.x - Set Customer Script": {
+    "prefix": "ncs_setcustomer",
+    "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType ClientScript",
+        " */",
+        "define(['N/error'], function(error) {",
+        "    function pageInit(context) {",
+        "        // if (context.mode == 'create')",
+        "        //     return;",
+        "        var currentRecord = context.currentRecord;",
+        "        currentRecord.setValue({",
+        "            fieldId: 'entity',",
+        "            value: 1111",
+        "        });",
+        "    }",
+        "    ",
+        "    return {",
+        "        pageInit: pageInit,",
+        "    };",
+        "});"
+    ],
+    "description": "NetSuite Client Script - 2.x - Set Customer Script"
+}
   }
     

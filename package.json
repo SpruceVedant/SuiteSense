@@ -32,7 +32,11 @@
         {
             "language": "javascript",
             "path": "./snippets/user-event.json"
-        }
+        },
+        {
+          "language": "javascript",
+          "path": "./snippets/client-script.json"
+      }
     ]
 },
   "scripts": {
