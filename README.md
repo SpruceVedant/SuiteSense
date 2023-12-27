@@ -4,9 +4,9 @@ This is the README for the "Suitesense" extension, a powerful tool for Netsuite 
 
 ## Features
 
---Snippet Support: Quickly insert Netsuite script templates using predefined snippets.
---Auto-completion Suggestions: Enhance your development workflow with intelligent auto-completion suggestions.
---GitHub Copilot Functionality: Experience advanced coding assistance for Netsuite scripting inspired by GitHub Copilot.
+- Snippet Support: Quickly insert Netsuite script templates using predefined snippets.
+- Auto-completion Suggestions: Enhance your development workflow with intelligent auto-completion suggestions.
+- GitHub Copilot Functionality: Experience advanced coding assistance for Netsuite scripting inspired by GitHub Copilot.
 
 ## Requirements
 
