@@ -19,8 +19,8 @@ Visual Studio Code: Install the latest version of Visual Studio Code.
 
 Suitesense contributes the following settings to VS Code:
 
-suitesense.enable: Enable/disable the Suitesense extension.
-suitesense.snippetDelay: Set the delay for snippet suggestions.
+- ```suitesense.enable: Enable/disable the Suitesense extension.```
+- ```suitesense.snippetDelay: Set the delay for snippet suggestions.```
 
 ## Known Issues
 
