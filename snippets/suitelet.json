@@ -34,7 +34,7 @@
           "            // form.addField({",
           "            //     id: 'custpage_status',",
           "            //     type: serverWidget.FieldType.SELECT,",
-          "            //     source: 'entityStatus',",
+        
           "            //     label: 'Status'",
           "            // });",
           "            ",
