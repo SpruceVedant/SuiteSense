@@ -24,7 +24,7 @@ Suitesense contributes the following settings to VS Code:
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Any known bugs will be displayed here.
 
 ## Release Notes
 
