@@ -1,0 +1,13 @@
+function getInputData(context) {
+    var searchObject = search.create({
+        type: "item",
+        filters: [["internalid", "anyof", "43276"], "AND", ["pricing.currency", "anyof", "1"]],
+        columns:
+            [
+                search.createColumn({ name: "pricelevel", join: "pricing" }),
+                search.createColumn({ name: "unitprice", join: "pricing" })
+            ]
+    });
+
+    return searchObject;
+}
