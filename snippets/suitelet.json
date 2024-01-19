@@ -1,6 +1,6 @@
 {
   "NetSuite Suitelet - 2.x": {
-      "prefix": "nsuite_emp",
+      "prefix": "nsuite_emp_suitelet",
       "body": [
           "/**",
           " * @NApiVersion 2.x",
