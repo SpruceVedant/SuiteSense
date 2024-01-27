@@ -18,7 +18,7 @@
       "description": "NetSuite Restlet - 2.x"
     }
     "RESTlet Script - 2.x": {
-    "prefix": "nsrest2",
+    "prefix": "nsrestbplt",
     "body": [
         "/**",
         " * @NApiVersion 2.x",
