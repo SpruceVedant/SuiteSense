@@ -17,5 +17,32 @@
       ],
       "description": "NetSuite Restlet - 2.x"
     }
+    "RESTlet Script - 2.x": {
+    "prefix": "nsrest2",
+    "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType Restlet",
+        " */",
+        "define(['N/record', 'N/log'], function(record, log) {",
+        "",
+        "   function doPost(requestBody) {",
+        "       // Code for POST request",
+        "   }",
+        "",
+        "   function doGet(requestParams) {",
+        "       // Code for GET request",
+        "   }",
+        "",
+        "   return {",
+        "       get: doGet,",
+        "       post: doPost",
+        "   };",
+        "",
+        "});"
+    ],
+    "description": "NetSuite RESTlet Script - 2.x"
+}
+
   }
   
