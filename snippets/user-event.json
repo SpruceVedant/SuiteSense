@@ -1,20 +1,33 @@
 {
-    "Scheduled Script - 2.x": {
-        "prefix": "nss2",
+    "User Event Script - 2.x": {
+        "prefix": "nsue2",
         "body": [
             "/**",
             " * @NApiVersion 2.x",
-            " * @NScriptType ScheduledScript",
+            " * @NScriptType UserEventScript",
             " */",
-            "define(['N/log'], function (log) {",
-            "   function execute(context) {",
-            "       log.debug('Scheduled Script Executed!');",
+            "define(['N/record', 'N/log'], function(record, log) {",
+            "",
+            "   function beforeLoad(context) {",
+            "       // Your beforeLoad code here",
             "   }",
+            "",
+            "   function beforeSubmit(context) {",
+            "       // Your beforeSubmit code here",
+            "   }",
+            "",
+            "   function afterSubmit(context) {",
+            "       // Your afterSubmit code here",
+            "   }",
+            "",
             "   return {",
-            "       execute: execute",
+            "       beforeLoad: beforeLoad,",
+            "       beforeSubmit: beforeSubmit,",
+            "       afterSubmit: afterSubmit",
             "   };",
+            "",
             "});"
         ],
-        "description": "NetSuite Scheduled Script - 2.x"
+        "description": "NetSuite User Event Script - 2.x"
     }
 }
