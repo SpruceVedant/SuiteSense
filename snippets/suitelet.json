@@ -100,4 +100,30 @@
       ],
       "description": "NetSuite Suitelet - 2.x - Default Template"
   }
+  "Suitelet Script - 2.x (Simplified)": {
+    "prefix": "nsslsimple2",
+    "body": [
+        "/**",
+        " * @NApiVersion 2.x",
+        " * @NScriptType Suitelet",
+        " */",
+        "define(['N/log', 'N/http'], function(log, http) {",
+        "",
+        "   function onRequest(context) {",
+        "       if (context.request.method === http.Method.GET) {",
+        "           // Code for GET request",
+        "       } else {",
+        "           // Code for POST request",
+        "       }",
+        "   }",
+        "",
+        "   return {",
+        "       onRequest: onRequest",
+        "   };",
+        "",
+        "});"
+    ],
+    "description": "NetSuite Suitelet Script - 2.x (Simplified)"
+}
+
 }
