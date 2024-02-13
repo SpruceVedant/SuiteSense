@@ -27,11 +27,11 @@ function activate(context) {
 	context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
+
 function deactivate() {}
-//function to deactivate
+
 module.exports = {
 	activate,
 	deactivate
 }
-// module exports
+
