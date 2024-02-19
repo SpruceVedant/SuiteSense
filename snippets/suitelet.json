@@ -124,6 +124,25 @@
         "});"
     ],
     "description": "NetSuite Suitelet Script - 2.x (Simplified)"
-}
+},
+  
+  "SuiteScript 2.0 Function": {
+    "prefix": "ss2function",
+    "body": [
+      "/**
+       * @NApiVersion 2.x
+       * @NScriptType Suitelet
+       */",
+      "define(['N/log'], function (log) {",
+      "  function onRequest(context) {",
+      "    log.debug('Hello World!');",
+      "  }",
+      "  return {",
+      "    onRequest: onRequest",
+      "  };",
+      "});"
+    ],
+    "description": "SuiteScript 2.0 Suitelet Function"
+  }
 
 }
