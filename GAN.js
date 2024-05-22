@@ -5,7 +5,7 @@ const tf = require('@tensorflow/tfjs-node');
 
 let model;
 async function loadModel() {
-    model = await tf.loadLayersModel('file://path/to/model.json');
+    model = await tf.loadLayersModel('model.json');
 }
 
 
