@@ -56,8 +56,4 @@ function preprocessContext(context) {
     return inputTensor;
 }
 
-function postprocessOutput(outputTensor) {
-  
 
-    return codeSnippets;
-}
